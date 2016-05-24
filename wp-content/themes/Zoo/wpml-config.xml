@@ -1,0 +1,20 @@
+<wpml-config>
+
+    <custom-types>
+        <custom-type translate="1">flex_slider</custom-type>
+        <custom-type translate="1">super_slider</custom-type>
+        <custom-type translate="1">portfolios</custom-type>
+    </custom-types>    
+    <taxonomies>
+        <taxonomy translate="1">flex_slider_category</taxonomy>
+        <taxonomy translate="1">portfolio_item_category</taxonomy>
+    </taxonomies>
+    <admin-texts>
+	    <key name="twenty_eleven2">
+	      <key name="1"/>
+	      <key name="zo_footer_logo"/>
+	      <key name="zo_copyright_text"/>
+	    </key>
+  	</admin-texts>    
+  
+</wpml-config>
