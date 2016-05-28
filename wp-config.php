@@ -1,4 +1,10 @@
 <?php
+/** Enable W3 Total Cache Edge Mode */
+define('W3TC_EDGE_MODE', true); // Added by W3 Total Cache
+
+/** Enable W3 Total Cache */
+define('WP_CACHE', true); // Added by W3 Total Cache
+
 /** 
  * As configurações básicas do WordPress.
  *
@@ -13,23 +19,23 @@
  *
  * @package WordPress
  */
-//define('FS_METHOD', 'direct');
+define('FS_METHOD', 'direct');
 
 // ** Configurações do MySQL - Você pode pegar essas informações com o serviço de hospedagem ** //
 /** O nome do banco de dados do WordPress */
-//define('DB_NAME', 'trackerlogistica');
-define('DB_NAME', 'u164925959_track');
+define('DB_NAME', 'trackerlogistica');
+//define('DB_NAME', 'u164925959_track');
 
 /** Usuário do banco de dados MySQL */
-//define('DB_USER', 'root');
-define('DB_USER', 'u164925959_root');
+define('DB_USER', 'root');
+//define('DB_USER', 'u164925959_root');
 
 /** Senha do banco de dados MySQL */
-//define('DB_PASSWORD', '');
-define('DB_PASSWORD', 'jesus12');
+define('DB_PASSWORD', '');
+//define('DB_PASSWORD', 'jesus12');
 /** nome do host do MySQL */
-//define('DB_HOST', 'localhost');
-define('DB_HOST', 'mysql.hostinger.com.br');
+define('DB_HOST', 'localhost');
+//define('DB_HOST', 'mysql.hostinger.com.br');
 
 
 /** Conjunto de caracteres do banco de dados a ser usado na criação das tabelas. */
