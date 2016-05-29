@@ -25,24 +25,30 @@ define('WP_CACHE', true); // Added by W3 Total Cache
 /** O nome do banco de dados do WordPress */
 //define('DB_NAME', 'trackerlogistica');
 //define('DB_NAME', 'u164925959_track');
-define('DB_NAME', 'testetrackerlogistica');
+//define('DB_NAME', 'testetrackerlogistica');
 
 
 /** Usuário do banco de dados MySQL */
 //define('DB_USER', 'root');
 //define('DB_USER', 'u164925959_root');
-define('DB_USER', 'adminstSClVl');
+//define('DB_USER', 'adminstSClVl');
 
 /** Senha do banco de dados MySQL */
 //define('DB_PASSWORD', '');
 //define('DB_PASSWORD', 'jesus12');
-define('DB_PASSWORD', 'AbsX6KVMIzFX');
+//define('DB_PASSWORD', 'AbsX6KVMIzFX');
 
 /** nome do host do MySQL */
 //define('DB_HOST', 'localhost');
 //define('DB_HOST', 'mysql.hostinger.com.br');
-define('DB_HOST', '$OPENSHIFT_MYSQL_DB_HOST:$OPENSHIFT_MYSQL_DB_PORT');
+//define('DB_HOST', '$OPENSHIFT_MYSQL_DB_HOST:$OPENSHIFT_MYSQL_DB_PORT');
 
+define('DB_NAME', getenv('OPENSHIFT_APP_NAME'));
+define('DB_USER', getenv('OPENSHIFT_MYSQL_DB_USERNAME'));
+define('DB_PASSWORD', getenv('OPENSHIFT_MYSQL_DB_PASSWORD'));
+define('DB_HOST', getenv('OPENSHIFT_MYSQL_DB_HOST') . ':' . getenv('OPENSHIFT_MYSQL_DB_PORT'));
+define('DB_CHARSET', 'utf8');
+define('DB_COLLATE', '');
 
 
 /** Conjunto de caracteres do banco de dados a ser usado na criação das tabelas. */
