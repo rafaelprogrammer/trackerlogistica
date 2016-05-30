@@ -1251,5 +1251,8 @@ blockquote{
 } 
 @media \0screen {img { width: auto }}/* Prevent height distortion in IE8. */
 
-
+.imgOpacity {
+    opacity: 0.7;
+    filter: alpha(opacity=40); /* For IE8 and earlier */
+}
 
