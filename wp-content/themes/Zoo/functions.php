@@ -35,7 +35,6 @@ endif; // _s_setup
 add_action( 'after_setup_theme', '_s_setup' );
 
 
-
 function _s_widgets_init() {
     register_sidebar( array(
         'name' => __( 'Sidebar', 'zoo' ),

@@ -1256,3 +1256,7 @@ blockquote{
     filter: alpha(opacity=40); /* For IE8 and earlier */
 }
 
+.imgLogoHeader {
+    width: 100%;
+    height: auto;
+}
