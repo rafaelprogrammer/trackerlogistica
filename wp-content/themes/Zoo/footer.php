@@ -1,7 +1,5 @@
-
-
 <?php global $Zoo_Options; ?>
-	<footer class="footer row">
+	<footer class="footer">
 		<div class="grid">
 	 		<div class="c12 end" >
 	 			<a class="footerLogo" href="<?php echo get_home_url(); ?>"><img class="pulse" src="<?php $Zoo_Options->show('zo_footer_logo'); ?>"/></a>
@@ -55,4 +53,3 @@
 <?php wp_footer(); ?>
 </body>
 </html>
-
